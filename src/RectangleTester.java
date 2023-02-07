@@ -1,8 +1,14 @@
 public class RectangleTester {
     public static void main(String[] args) {
         //test your rectangle here
-        Rectangle rect1 = new Rectangle(87.2392837, 9.1838384);
-        double expectedPerimeter = 2 * 87.2392837 + 2 * 9.1838384;
-        System.out.println(rect1.calculatePerimeter() == expectedPerimeter);
+        Rectangle rect1 = new Rectangle(5, 10);
+        System.out.println(rect1);
+        rect1.setWidth(4);
+        rect1.setHeight(15);
+        System.out.println(rect1);
+        System.out.println(rect1.calculateArea());
+        System.out.println(rect1.calculatePerimeter());
+        rect1.resetRectangle(rect1);
+        System.out.println(rect1);
     }
 }

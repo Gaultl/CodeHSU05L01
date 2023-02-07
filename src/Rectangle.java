@@ -20,7 +20,7 @@ public class Rectangle { //make public for CS A
     //default constructor (make public for CS A)
 
     /**
-     * creates a rectangle with a default width and height of 1.0
+     * @description creates a rectangle with a default width and height of 1.0
      */
     public Rectangle(){
         width = 1.0;
@@ -30,7 +30,7 @@ public class Rectangle { //make public for CS A
     //overloaded constructor (with parameters)
 
     /**
-     * creates a Rectangle object with width and height
+     * @description creates a Rectangle object with width and height
      *
      * @param h height of rectangle
      * @param w width of rectangle
@@ -41,7 +41,7 @@ public class Rectangle { //make public for CS A
     }
 
     /**
-     * Allows the user to set the width
+     * @description Allows the user to set the width
      * @param width the desired width of the rectangle
      */
     public Rectangle(double width){
@@ -71,7 +71,7 @@ public class Rectangle { //make public for CS A
     //mutators
 
     /**
-     * Allows the user to change the width of the rectangle
+     * @description Allows the user to change the width of the rectangle
      *
      * @param newWidth the desired width of the rectangle
      */
@@ -80,17 +80,30 @@ public class Rectangle { //make public for CS A
     }
 
     /**
-     * Allows the user to change the height of the rectangle
+     * @description Allows the user to change the height of the rectangle
      *
      * @param newHeight the desired height of the rectangle
      */
     public void setHeight(double newHeight){
         height = newHeight;
     }
+
+    //rectangle reset
+
+    /**
+     * @description Resets the rectangle to a default width and height of 1
+     *
+     * @param rect The rectangle to reset
+     */
+    public void resetRectangle(Rectangle rect){
+        rect.width = 1;
+        rect.height = 1;
+    }
+
     //other methods
 
     /**
-     * Calculates the area of the rectangle and updates instance variable area.
+     * @description Calculates the area of the rectangle and updates instance variable area.
      *
      * @return the area of the rectangle
      */
@@ -100,7 +113,7 @@ public class Rectangle { //make public for CS A
     }
 
     /**
-     * Calculates the perimeter of the rectangle and updates the instance variable perimeter
+     * @description Calculates the perimeter of the rectangle and updates the instance variable perimeter
      *
      * @return the perimeter of the rectangle
      */
@@ -112,7 +125,7 @@ public class Rectangle { //make public for CS A
 
     //toString method
     /**
-     * Prints the height and width of rectangle to 2 decimal places
+     * @description Prints the height and width of rectangle to 2 decimal places
      */
     public String toString(){
         DecimalFormat df = new DecimalFormat("#.##");
